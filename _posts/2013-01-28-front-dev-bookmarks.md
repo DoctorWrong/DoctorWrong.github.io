@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "frontend dev bookmarks"
-description: ""
-category: 
+title: "Frontend dev bookmarks"
+description: "Some frontend dev resources"
+category: frontend
 tags: [frontend]
 ---
 {% include JB/setup %}
