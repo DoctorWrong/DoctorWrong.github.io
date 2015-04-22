@@ -14,7 +14,7 @@ author :
   name : Uncle Zheng
   email : zhengyongbo0128@gmail.com
   github : zhengyongbo
-  twitter : username
+  twitter : zhengyongbo
   feedburner : zhengyongbo
 
 # The production_url is only used when full-domain names are needed
@@ -82,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : unclezheng
     livefyre :
       site_id : 123
     intensedebate :
@@ -98,7 +98,7 @@ JB :
   # Set 'provider' to false to turn analytics off globally.
   #        
   analytics :
-    provider : google 
+    provider : #google 
     google : 
         tracking_id : 'UA-123-12'
     getclicky :

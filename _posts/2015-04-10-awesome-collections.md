@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Awesome collections"
-description: "Programming stuffs"
-category: collection 
-tags: [programming]
+description: ""
+category: 
+tags: []
 ---
 {% include JB/setup %}
 

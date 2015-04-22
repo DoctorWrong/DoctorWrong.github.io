@@ -13,7 +13,7 @@ Front-end Frameworks v2.6
 
 A collection of best front-end frameworks for faster and easier web development.
 
-You can **Compare** all front-end frameworks here: http://usablica.github.com/front-end-frameworks/compare.html
+You can **Compare** all front-end frameworks [here:](http://usablica.github.com/front-end-frameworks/compare.html)
 
 ## IceCream
 
