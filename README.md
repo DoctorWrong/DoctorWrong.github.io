@@ -1,2 +1,6 @@
 # zhengyongbo.github.io
-My daily collections
+
+**Useful Commands**
+
+1. Generate a post
+2. 

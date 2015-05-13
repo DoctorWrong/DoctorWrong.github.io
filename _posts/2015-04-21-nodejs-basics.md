@@ -3,7 +3,7 @@ layout: post
 title: "Node.js basics"
 description: ""
 category: 
-tags: []
+tags: [node.js]
 ---
 {% include JB/setup %}
 

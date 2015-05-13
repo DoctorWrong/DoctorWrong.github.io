@@ -1,0 +1,49 @@
+---
+layout: page
+title: Uncle Zheng's collections
+---
+{% include JB/setup %}
+<div class="jumbotron">
+    <h1>Jumbotron</h1>
+    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <p><a class="btn btn-primary btn-lg btn-{{site.material.theme}}">Learn more</a></p>
+</div>
+<div class="panel panel-{{ site.material.theme }}">
+	<div class="panel-heading">
+		posts
+	</div>
+	<div class="panel-body">
+		<ul class="list-group">
+		  {% for post in site.posts %}
+		    <li class="list-group-item">
+		        <div class="row-action-primary">
+		            <i class="mdi-file-folder"></i>
+		        </div>
+		        <div class="row-content">
+		            <div class="least-content">{{ post.date | date_to_string }}</div>
+		            <a href="{{ BASE_PATH }}{{ post.url }}"><h4 class="list-group-item-heading">{{ post.title }}</h4></a>
+		            <p class="list-group-item-text">{{ post.content | strip_html | truncate: 250 }}</p>
+		        </div>
+		    <li class="list-group-separator"></li>
+		  {% endfor %}
+		</ul>
+	</div>
+	{% if paginator.total_pages > 1 %}
+		<div class="panel-footer text-center">
+			<ul class="pagination">
+				{% for page in (1..paginator.total_pages) %}
+		            {% if page == paginator.page %}
+		                <li class="active"><a href="javascript:void(0);">{{ page }}</a></li>
+		            {% else %}
+		                <li><a href="{{ site.url }}/{%if page > 1 %}page{{ page }}/{% endif %}">{{ page }}</a></li>
+		            {% endif %}
+		        {% endfor %}
+		    </ul>
+		</div>
+	{% endif %}
+</div>
+
+
+
+
+

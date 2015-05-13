@@ -3,6 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+markdown: kramdown
 highlighter: pygments
 
 # Themes are encouraged to use these universal variables 
@@ -13,10 +14,20 @@ tagline: Daily collections
 author :
   name : Uncle Zheng
   email : zhengyongbo0128@gmail.com
-  github : zhengyongbo
+  github : https://github.com/zhengyongbo
   twitter : zhengyongbo
   feedburner : zhengyongbo
 
+material:
+  theme: material-grey-50
+  # theme: material-brown-700
+
+paginate_path : "blog/page:num/"
+paginate : 5
+
+port:  8000
+
+postImgUrl : /images/post-default.png
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -25,7 +36,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://zhengyongbo.github.io
+production_url : http://www.unclezheng.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -92,7 +103,6 @@ JB :
       num_posts: 5
       width: 580
       colorscheme: light
-   
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
@@ -116,7 +126,7 @@ JB :
   #
   sharing :
     provider : false
-    
+
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
   #
@@ -127,4 +137,4 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
+

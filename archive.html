@@ -5,6 +5,13 @@ header : Post Archive
 group: navigation
 ---
 {% include JB/setup %}
-
-{% assign posts_collate = site.posts %}
-{% include JB/posts_collate %}
+<div class="even-container">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2 well">
+			{% assign posts_collate = site.posts %}
+			{% include JB/posts_collate %}
+			</div>
+		</div>
+	</div>
+</div>
