@@ -5,6 +5,11 @@ body {
 	background-color: $background-color;
 }
 
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-family: inherit;
+  font-weight: inherit;
+}
+
 /* Wrapper for page content to push down footer */
 #wrap {
 	min-height: 100%;

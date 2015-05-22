@@ -1,6 +1,6 @@
 $(function() {
 	$.material.init();
-	$("#unclezheng .banner-title").lettering();
+	$("#unclezheng .banner-title").lettering().fitText(0.73);
 
 	$(window).scroll(function () {
         if ($(this).scrollTop() > 100) {

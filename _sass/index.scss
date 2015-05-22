@@ -1,14 +1,14 @@
 .banner {
 	width: 100%;
-	text-align: center;
-	padding: 50px 0 280px;
-	// margin-bottom: 5.8%;
-	height: 0px;
-	overflow: hidden !important;
 	position: relative;
-	margin-top: -20px;
+    text-align: center;
+    padding: 5% 0 20.7%;
+    margin-bottom: 5.8%;
+    height: 0px;
+    overflow: hidden!important;
 
 	h1 {
+		width: 100%!important;
 		display: inline-block;
 	}
 	.banner-title {
@@ -18,7 +18,6 @@
 		font: 40px "liquor-store-1", "liquor-store-2", "Impact", "Arial Narrow", sans-serif;
 		text-transform: uppercase;
 		display: inline-block;
-		font-size: 150px;
 
 		span {
 			display: inline-block;
