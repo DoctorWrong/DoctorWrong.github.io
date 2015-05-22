@@ -4,6 +4,7 @@ title: "Frontend frameworks"
 description: "All kinds of CSS framworks"
 category: collection
 tags: [frontend]
+type: star
 ---
 {% include JB/setup %}
 

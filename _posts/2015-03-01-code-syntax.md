@@ -4,6 +4,7 @@ title: "Code Syntax"
 description: ""
 category: 
 tags: [frontend]
+type: date
 ---
 {% include JB/setup %}
 

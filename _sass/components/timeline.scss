@@ -4,17 +4,6 @@
     list-style: none;
 }
 
-.timeline:before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 3px;
-    margin-left: -1.5px;
-    background-color: #eeeeee;
-}
-
 .timeline > li {
     position: relative;
     margin-bottom: 20px;
@@ -199,9 +188,13 @@
 }
 
 .t-view {
-  border: 1px solid #eee;
+  // border: 1px solid #E4E4E4;
   position: relative;
   margin-bottom: 35px;
+  
+  &:hover{
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+  }
 }
 
 @media (max-width: 767px) {
@@ -213,8 +206,22 @@
 
 .t-view .tv-header {
   padding: 16px 18px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #E4E4E4;
   background: #F9F9F9;
+  .tvh-title{
+    font-weight: bold;
+  font-size: 18px;
+  }
+  .tvh-date{
+    font-size: 12px;
+    color: #999;
+  }
+
+  .view-post{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
 }
 
 .t-view .tv-header .actions {
@@ -225,6 +232,12 @@
 
 .t-view .tv-body {
   padding: 23px 25px;
+  
+  .tvb-summary{
+    word-break: break-all;
+    word-spacing: 2px;
+    line-height: 1.5;
+  }
 }
 
 .t-view .tv-body .tvb-lightbox {
@@ -258,8 +271,12 @@
   font-size: 20px;
   line-height: 34px;
   color: #FFF;
-  font-family: 'Material Design Iconic Font';
+  font-family: 'FontAwesome';
   z-index: 1;
+  
+  content: "\f1d8";
+  background: #00bcd4;
+  box-shadow: 0 0 0 1px #00bcd4;
 }
 
 .t-view:after {
@@ -269,10 +286,12 @@
   left: -50px;
   width: 1px;
   height: calc(100% + 37px);
+  
+  background: #00bcd4;
 }
 
 .t-view[data-tv-type="text"]:before {
-  content: "\f11b";
+  content: "\f1d8";
   background: #00bcd4;
   box-shadow: 0 0 0 1px #00bcd4;
 }
@@ -281,23 +300,23 @@
   background: #00bcd4;
 }
 
-.t-view[data-tv-type="image"]:before {
-  content: "\f224";
+.t-view[data-tv-type="date"]:before {
+  content: "\f073";
   background: #4caf50;
   box-shadow: 0 0 0 1px #4caf50;
 }
 
-.t-view[data-tv-type="image"]:after {
+.t-view[data-tv-type="date"]:after {
   background: #4caf50;
 }
 
-.t-view[data-tv-type="video"]:before {
-  content: "\f0cc";
+.t-view[data-tv-type="star"]:before {
+  content: "\f006";
   background: #ffc107;
   box-shadow: 0 0 0 1px #ffc107;
 }
 
-.t-view[data-tv-type="video"]:after {
+.t-view[data-tv-type="star"]:after {
   background: #ffc107;
 }
 
@@ -345,7 +364,7 @@
 .tv-comments .tvc-lists > li {
   padding: 15px 20px;
   margin: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #E4E4E4;
 }
 
 .tvc-more {

@@ -1,0 +1,116 @@
+.even-container {
+  @include even-bg-color($even-bg-color1, $even-bg-color);
+  padding-top: 20px;
+}
+.odd-container {
+  @include odd-bg-color($odd-bg-color);
+  padding-top: 20px;
+}
+
+.navOpen {
+  overflow: hidden;
+}
+.page-wrapper {
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+  // padding: 100px 40px;
+}
+.page-wrapper.open {
+  transform: translateX(250px) translateY(50px);
+  -webkit-transform: translateX(250px) translateY(50px);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+.toggle-nav {
+  transition-duration: 0.5s;
+  transition-timing-function: swing;
+  width: 50px;
+  height: 50px;
+  background-color: #14B9FF;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9;
+
+  &:hover {
+    cursor: pointer;
+  }
+  .toggle-icon {
+    transition-duration: 0.2s;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    top: 24px;
+    left: 10px;
+
+    &:before, &:after {
+      transition-duration: 0.5s;
+      background-color: white;
+      position: absolute;
+      content: "";
+      width: 30px;
+      height: 2px;
+      left: 0px;
+    }
+    &:before {
+      top: -7px;
+    }
+    &:after {
+      top: 7px;
+    }
+  }
+}
+.toggle-nav.open {
+  transform: translateX(250px) translateY(50px);
+  -webkit-transform: translateX(250px) translateY(50px);
+
+  .toggle-icon {
+    background-color: transparent;
+
+    &:before, &:after {
+      top: 0;
+    }
+    &:before {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+  }
+}
+.nav-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  .nav-list-wrapper {
+    width: 250px;
+    margin-top: 50px;
+
+    &:hover li {
+      color: rgba(255, 255, 255, 0.5);
+    }
+    li {
+      transition-duration: 0.25s;
+      display: block;
+      padding: 5px 40px;
+      color: white;
+      letter-spacing: 0.02em;
+      text-align: right;
+
+      &::hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}

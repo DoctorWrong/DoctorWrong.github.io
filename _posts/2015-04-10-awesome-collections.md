@@ -4,6 +4,7 @@ title: "Awesome collections"
 description: ""
 category: 
 tags: []
+type: star
 ---
 {% include JB/setup %}
 

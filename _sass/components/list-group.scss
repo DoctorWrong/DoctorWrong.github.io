@@ -1,17 +1,3 @@
-.navbar.my-navbar {
-	margin-bottom: 0;
-	background-color: #fff;
-	border-bottom: 0;
-	font-weight: 500;
-	color: $odd-text-color;
-
-	.navbar-nav>.active>a {
-		&, &:focus, &:hover {
-			color: inherit;
-			background-color: rgba(66, 65, 65, 0.1);
-		}
-	}
-}
 .my-list.list-group {
 	.list-group-item {
 		padding: 20px 50px;
