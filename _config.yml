@@ -9,14 +9,14 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Uncle Zheng's blog
+title : Tong Miao cai's blog
 tagline: Daily collections
 author :
-  name : Uncle Zheng
-  email : zhengyongbo0128@gmail.com
-  github : https://github.com/zhengyongbo
-  twitter : zhengyongbo
-  feedburner : zhengyongbo
+  name : Tong Miao cai
+  email : tongmiaocai@163.com
+  github : https://github.com/tongmiaocai
+  twitter : tongmiaocai
+  feedburner : tongmiaocai
 
 material:
   theme: material-grey-50
@@ -36,7 +36,7 @@ postImgUrl : /images/post-default.png
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://www.unclezheng.com
+production_url : http://www.tongmiaocai.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
