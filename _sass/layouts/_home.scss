@@ -24,7 +24,7 @@
 			width: .55em;
 		}
 	}
-	.char1, .char3, .char5, .char8, .char10, .char12 {
+	.char1, .char3, .char6, .char8, .char11, .char13 {
 		-webkit-transform: scale(1) skewY(-30deg);
 		-o-transform: scale(1) skewY(-30deg);
 		-moz-transform: scale(1) skewY(-30deg);
@@ -34,7 +34,8 @@
 		background: #3E2723;
 		background-size: 175%;
 	}
-	.char2, .char4, .char7, .char9, .char11 {
+
+	.char2, .char4, .char7, .char9, .char12 {
 		-webkit-transform: scale(1) skewY(30deg);
 		-o-transform: scale(1) skewY(30deg);
 		-moz-transform: scale(1) skewY(30deg);
@@ -44,7 +45,8 @@
 		background: #AA0000;
 		background-size: 175%;
 	}
-	.char6 {
+
+	.char5,.char10 {
 		width: .25em !important;
 	}
 }
